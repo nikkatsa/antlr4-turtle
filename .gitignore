@@ -1,0 +1,21 @@
+# Java
+*.class
+
+*.jar
+*.war
+*.zip
+*.tar.gz
+
+# Logs
+*.log
+*.out
+
+# IntelliJ
+*.iml
+.idea/
+
+# Maven
+target/
+
+# MacOS
+.DS_Store

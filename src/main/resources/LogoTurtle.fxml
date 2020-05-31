@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
+    xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.nikoskatsanos.turtle.ui.TurtleFXUIController">
+    <top>
+        <MenuBar>
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="Open..." onAction="#onOpen"></MenuItem>
+                    </items>
+                </Menu>
+                <Menu text="Help">
+                    <items>
+                        <MenuItem text="About" onAction="#onAbout"></MenuItem>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+    <center>
+        <SplitPane dividerPositions="0.3" prefHeight="160.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <VBox alignment="CENTER" layoutX="11.0" layoutY="15.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="366.0" prefWidth="152.0" AnchorPane.bottomAnchor="17.0"
+                            AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="15.0">
+                            <children>
+                                <TextArea fx:id="codeEditor" prefHeight="326.0" prefWidth="152.0" promptText="Logo Program" VBox.vgrow="ALWAYS">
+                                    <VBox.margin>
+                                        <Insets bottom="5.0" top="5.0"/>
+                                    </VBox.margin>
+                                </TextArea>
+                                <HBox alignment="CENTER">
+                                    <Button fx:id="run" alignment="TOP_LEFT" minWidth="-Infinity" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#runProgram"
+                                        text="Run" textAlignment="JUSTIFY" VBox.vgrow="NEVER">
+                                        <HBox.margin>
+                                            <Insets bottom="2.0" left="2.0" right="2.0" top="2.0"/>
+                                        </HBox.margin>
+                                    </Button>
+                                    <Slider fx:id="animationSpeed" accessibleText="Animation Speed" min="10" max="1000.0" showTickLabels="true" showTickMarks="true" value="100.0"/>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <Pane maxHeight="300" maxWidth="400" minHeight="300" minWidth="400">
+                            <Group fx:id="logoCanvas"/>
+                        </Pane>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+    </center>
+</BorderPane>

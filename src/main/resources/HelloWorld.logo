@@ -1,0 +1,175 @@
+// HelloWorld program in Logo
+set 20,20
+resetAngle
+penDown
+
+// H
+right 90
+forward 50
+penUp
+back 25
+penDown
+left 90
+forward 25
+left 90
+forward 25
+penUp
+back25
+penDown
+back 25
+
+// move to E position
+penUp
+forward 50
+right 90
+forward 15
+penDown
+
+// E
+forward 25
+penUp
+back 25
+penDown
+right 90
+forward 25
+left 90
+forward 25
+penUp
+back 25
+penDown
+right 90
+forward 25
+left 90
+forward 25
+
+// move to L
+penUp
+forward 15
+penDown
+
+// L
+forward 25
+penUp
+back 25
+penDown
+left 90
+forward 50
+
+// move to L
+penUp
+right 90
+forward 40
+penDown
+
+// L
+right 90
+forward 50
+left 90
+forward 25
+
+// move to O
+penUp
+forward 15
+penDown
+
+// O
+forward 25
+left 90
+forward 50
+left 90
+forward 25
+left 90
+forward 50
+left 90
+
+// move to second row
+set 20,90
+
+// W
+right 78
+forward 56
+left 78
+left 78
+forward 20
+left 12
+right 90
+right 78
+forward 20
+left 78
+left 78
+forward 56
+left 12
+
+// Move to O
+penUp
+right 90
+forward 15
+penDown
+
+// O
+forward 25
+right 90
+forward 50
+right 90
+forward 25
+right 90
+forward 50
+
+// move to R
+penUp
+right 90
+forward 40
+penDown
+
+// R
+right 90
+forward 50
+penUp
+back 25
+left 45
+penDown
+forward 35
+penUp
+back 35
+left 135
+forward 25
+penDown
+right 90
+forward 25
+right 90
+forward 25
+right 90
+forward 25
+
+// Move to L
+penUp
+right 90
+forward 25
+right 90
+forward 25
+forward 15
+right 90
+penDown
+
+// L
+forward 50
+left 90
+forward 25
+
+// Move to D
+penUp
+forward 15
+penDown
+
+// D
+left 90
+forward 50
+right 90
+right 60
+forward 30
+right 60
+forward 30
+
+// beginning
+set 20,20
+resetAngle
